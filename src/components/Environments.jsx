@@ -4,19 +4,19 @@ export default function Environments() {
       name: "Quantum Laboratory",
       description:
         "A research facility where reality constantly shifts between multiple states. Walls and passages appear and disappear based on observation principles.",
-      image: "/morphic-destroyer.jpeg",
+      image: "/morphic-destroyer-fps.jpeg",
     },
     {
       name: "Neo-Tokyo Dreamscape",
       description:
         "A cyberpunk cityscape that reacts to your emotional state. The environment becomes more chaotic as your combat intensity increases.",
-      image: "/void-reaver.jpeg",
+      image: "/void-reaver-fps.jpeg",
     },
     {
       name: "Fractal Wilderness",
       description:
         "A natural environment that repeats its patterns at different scales. Navigate through recursive landscapes that challenge spatial perception.",
-      image: "/neural-disruptor.jpeg",
+      image: "/neural-disruptor-fps.jpeg",
     },
   ];
 

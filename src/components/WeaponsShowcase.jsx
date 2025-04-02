@@ -17,7 +17,7 @@ export default function WeaponsShowcase() {
         stability: 85,
         evolution: 100,
       },
-      image: "/morphic-destroyer.jpeg",
+      image: "/morphic-destroyer-fps.jpeg",
     },
     {
       name: "Void Reaver",
@@ -30,7 +30,7 @@ export default function WeaponsShowcase() {
         stability: 50,
         evolution: 95,
       },
-      image: "/void-reaver.jpeg",
+      image: "/void-reaver-fps.jpeg",
     },
     {
       name: "Neural Disruptor",
@@ -43,7 +43,7 @@ export default function WeaponsShowcase() {
         stability: 70,
         evolution: 85,
       },
-      image: "/neural-disruptor.jpeg",
+      image: "/neural-disruptor-fps.jpeg",
     },
   ];
 

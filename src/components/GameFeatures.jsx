@@ -150,7 +150,7 @@ export default function GameFeatures() {
             <div className="md:w-1/2 flex justify-center">
               <div className="rounded-lg overflow-hidden w-full max-w-md relative bg-gray-800">
                 <img
-                  src="/morphic-destroyer.jpeg"
+                  src="/morphic-destroyer-fps.jpeg"
                   alt="Gameplay Features"
                   className="w-full h-64 object-cover"
                 />
