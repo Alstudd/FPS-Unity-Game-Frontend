@@ -58,9 +58,11 @@ export default function Environments() {
 
           <div className="inline-block relative animate-on-scroll">
             <div className="absolute -inset-1 bg-gradient-to-r from-red-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-gradient-x"></div>
-            <button className="relative bg-black rounded-lg px-8 py-4 text-xl font-bold">
-              EXPERIENCE ALL ENVIRONMENTS
-            </button>
+            <a href="#">
+              <button className="cursor-pointer relative bg-black rounded-lg px-8 py-4 text-xl font-bold">
+                EXPERIENCE ALL ENVIRONMENTS
+              </button>
+            </a>
           </div>
         </div>
       </div>

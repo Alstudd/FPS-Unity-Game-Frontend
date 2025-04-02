@@ -6,10 +6,10 @@ export default function Footer() {
           <div className="mb-8 md:mb-0">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-red-600 rounded-sm flex items-center justify-center mr-3">
-                <span className="text-2xl font-bold">A</span>
+                <span className="text-2xl font-bold">F</span>
               </div>
               <span className="text-2xl font-bold font-orbitron">
-                ALSTUDD GAMES
+                FPS
               </span>
             </div>
             <p className="text-gray-400 max-w-md">
@@ -89,7 +89,15 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>
                   <a
-                    href="#"
+                    href="#home"
+                    className="text-gray-400 hover:text-red-500 transition-colors"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#features"
                     className="text-gray-400 hover:text-red-500 transition-colors"
                   >
                     Features
@@ -97,7 +105,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#weapons"
                     className="text-gray-400 hover:text-red-500 transition-colors"
                   >
                     Weapons
@@ -105,18 +113,10 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#environments"
                     className="text-gray-400 hover:text-red-500 transition-colors"
                   >
                     Environments
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-400 hover:text-red-500 transition-colors"
-                  >
-                    Roadmap
                   </a>
                 </li>
               </ul>

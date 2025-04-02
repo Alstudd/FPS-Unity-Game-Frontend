@@ -23,9 +23,9 @@ export default function Header() {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
           <div className="w-10 h-10 mr-3 bg-red-600 rounded-sm flex items-center justify-center">
-            <span className="text-xl font-bold">A</span>
+            <span className="text-xl font-bold">F</span>
           </div>
-          <span className="text-xl font-bold font-orbitron">ALSTUDD</span>
+          <span className="text-xl font-bold font-orbitron">FPS</span>
         </div>
 
         <nav className="hidden md:flex items-center space-x-8">
@@ -56,9 +56,9 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center">
-          <button className="bg-gradient-to-r from-red-600 to-red-800 text-white px-6 py-2 rounded font-medium hover:from-red-700 hover:to-red-900 transition-all font-rajdhani">
+          <a href="#" className="cursor-pointer bg-gradient-to-r from-red-600 to-red-800 text-white px-6 py-2 rounded font-medium hover:from-red-700 hover:to-red-900 transition-all font-rajdhani">
             PLAY NOW
-          </button>
+          </a>
 
           <button
             className="ml-4 md:hidden"

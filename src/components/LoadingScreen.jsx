@@ -16,15 +16,11 @@ export default function LoadingScreen() {
 
   return (
     <div className="fixed inset-0 bg-black flex flex-col items-center justify-center z-50">
-      <div className="w-32 h-32 mb-8">
-        <img
-          src="/api/placeholder/128/128"
-          alt="Game Logo"
-          className="animate-pulse"
-        />
+      <div className="w-32 h-32 mb-8 mr-3 bg-red-600 rounded-sm flex items-center justify-center">
+        <span className="text-5xl font-bold">F</span>
       </div>
       <h1 className="text-5xl font-bold text-red-500 mb-8 font-orbitron">
-        ALSTUDD GAMES
+        FPS
       </h1>
       <div className="w-64 h-2 bg-gray-800 rounded-full overflow-hidden">
         <div

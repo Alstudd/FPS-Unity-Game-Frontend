@@ -2,6 +2,48 @@ import { useEffect, useRef } from "react";
 
 export default function GameFeatures() {
   const featuresRef = useRef([]);
+  const sectionRef = useRef(null);
+  const soloSectionRef = useRef(null);
+
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1,
+    };
+
+    const animateOnScroll = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-fade-in");
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = "translateY(0)";
+
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(animateOnScroll, observerOptions);
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    featuresRef.current.forEach((ref) => {
+      if (ref) {
+        observer.observe(ref);
+      }
+    });
+
+    if (soloSectionRef.current) {
+      observer.observe(soloSectionRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   const features = [
     {
@@ -36,7 +78,15 @@ export default function GameFeatures() {
       className="py-20 bg-gradient-to-b from-black to-gray-900"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center font-orbitron animate-on-scroll">
+        <h2
+          ref={sectionRef}
+          className="text-4xl md:text-5xl font-bold mb-16 text-center font-orbitron"
+          style={{
+            opacity: 0,
+            transform: "translateY(20px)",
+            transition: "opacity 0.6s ease-out, transform 0.6s ease-out",
+          }}
+        >
           GAME <span className="text-red-500">FEATURES</span>
         </h2>
 
@@ -45,7 +95,14 @@ export default function GameFeatures() {
             <div
               key={index}
               ref={(el) => (featuresRef.current[index] = el)}
-              className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-lg p-6 transition-all duration-300 hover:border-red-500 hover:transform hover:scale-105 animate-on-scroll"
+              className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-lg p-6 transition-all duration-300 hover:border-red-500 hover:transform hover:scale-105"
+              style={{
+                opacity: 0,
+                transform: `translateY(${20 + index * 10}px)`,
+                transition: `opacity 0.6s ease-out ${
+                  index * 0.1
+                }s, transform 0.6s ease-out ${index * 0.1}s`,
+              }}
             >
               <div className="text-4xl mb-4">{feature.icon}</div>
               <h3 className="text-2xl font-bold mb-3 font-rajdhani">
@@ -56,7 +113,16 @@ export default function GameFeatures() {
           ))}
         </div>
 
-        <div className="mt-20 bg-gray-900/30 border border-gray-800 rounded-xl p-8 animate-on-scroll">
+        <div
+          ref={soloSectionRef}
+          className="mt-20 bg-gray-900/30 border border-gray-800 rounded-xl p-8"
+          style={{
+            opacity: 0,
+            transform: "translateY(30px)",
+            transition:
+              "opacity 0.8s ease-out 0.3s, transform 0.8s ease-out 0.3s",
+          }}
+        >
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8">
               <h3 className="text-3xl font-bold mb-4 font-orbitron">
@@ -82,11 +148,11 @@ export default function GameFeatures() {
               </ul>
             </div>
             <div className="md:w-1/2 flex justify-center">
-              <div className="rounded-lg overflow-hidden w-full max-w-md relative">
+              <div className="rounded-lg overflow-hidden w-full max-w-md relative bg-gray-800">
                 <img
                   src="/api/placeholder/600/400"
                   alt="Gameplay Features"
-                  className="w-full"
+                  className="w-full h-64 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end justify-center pb-4">
                   <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full flex items-center transition-all">

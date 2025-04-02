@@ -57,9 +57,9 @@ export default function Home() {
     });
   };
 
-  // if (loading) {
-  //   return <LoadingScreen />;
-  // }
+  if (loading) {
+    return <LoadingScreen />;
+  }
 
   return (
     <div className="bg-black text-white overflow-hidden">

@@ -124,12 +124,19 @@ export default function Hero() {
             first-person shooter experience.
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="bg-red-600 hover:bg-red-700 text-white text-xl px-8 py-4 rounded-lg font-bold transition-all transform hover:scale-105 font-rajdhani">
+            <a
+              href="#"
+              className="cursor-pointer bg-red-600 hover:bg-red-700 text-white text-xl px-8 py-4 rounded-lg font-bold transition-all transform hover:scale-105 font-rajdhani"
+            >
               PLAY NOW
-            </button>
-            <button className="bg-transparent border-2 border-white text-white text-xl px-8 py-4 rounded-lg font-bold transition-all hover:bg-white/10 font-rajdhani">
-              WATCH TRAILER
-            </button>
+            </a>
+            <a
+              href="https://drive.google.com/drive/folders/1LS3iE97tUtjvQQAC9W8kcM5-ioc0xQba?usp=sharing"
+              target="_blank"
+              className="cursor-pointer bg-transparent border-2 border-white text-white text-xl px-8 py-4 rounded-lg font-bold transition-all hover:bg-white/10 font-rajdhani"
+            >
+              DOWNLOAD
+            </a>
           </div>
         </div>
       </div>
