@@ -56,7 +56,11 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center">
-          <a href="#" className="cursor-pointer bg-gradient-to-r from-red-600 to-red-800 text-white px-6 py-2 rounded font-medium hover:from-red-700 hover:to-red-900 transition-all font-rajdhani">
+          <a
+            href="https://alstudd.itch.io/fps"
+            target="_blank"
+            className="cursor-pointer bg-gradient-to-r from-red-600 to-red-800 text-white px-6 py-2 rounded font-medium hover:from-red-700 hover:to-red-900 transition-all font-rajdhani"
+          >
             PLAY NOW
           </a>
 

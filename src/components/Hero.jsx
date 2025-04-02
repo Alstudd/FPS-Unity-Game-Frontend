@@ -125,7 +125,8 @@ export default function Hero() {
           </p>
           <div className="flex flex-wrap gap-4">
             <a
-              href="#"
+              href="https://alstudd.itch.io/fps"
+              target="_blank"
               className="cursor-pointer bg-red-600 hover:bg-red-700 text-white text-xl px-8 py-4 rounded-lg font-bold transition-all transform hover:scale-105 font-rajdhani"
             >
               PLAY NOW

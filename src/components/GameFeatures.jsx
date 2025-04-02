@@ -150,12 +150,16 @@ export default function GameFeatures() {
             <div className="md:w-1/2 flex justify-center">
               <div className="rounded-lg overflow-hidden w-full max-w-md relative bg-gray-800">
                 <img
-                  src="/api/placeholder/600/400"
+                  src="/morphic-destroyer.jpeg"
                   alt="Gameplay Features"
                   className="w-full h-64 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end justify-center pb-4">
-                  <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full flex items-center transition-all">
+                  <a
+                    href="https://alstudd.itch.io/fps"
+                    target="_blank"
+                    className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full flex items-center transition-all"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-5 w-5 mr-2"
@@ -168,8 +172,8 @@ export default function GameFeatures() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    Watch Gameplay
-                  </button>
+                    Play Game
+                  </a>
                 </div>
               </div>
             </div>

@@ -17,6 +17,7 @@ export default function WeaponsShowcase() {
         stability: 85,
         evolution: 100,
       },
+      image: "/morphic-destroyer.jpeg",
     },
     {
       name: "Void Reaver",
@@ -29,6 +30,7 @@ export default function WeaponsShowcase() {
         stability: 50,
         evolution: 95,
       },
+      image: "/void-reaver.jpeg",
     },
     {
       name: "Neural Disruptor",
@@ -41,6 +43,7 @@ export default function WeaponsShowcase() {
         stability: 70,
         evolution: 85,
       },
+      image: "/neural-disruptor.jpeg",
     },
   ];
 
@@ -66,7 +69,7 @@ export default function WeaponsShowcase() {
 
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center font-orbitron animate-on-scroll">
-          EVOLVING <span className="text-red-500">ARSENAL</span>
+          UPCOMING <span className="text-red-500">ARSENAL</span>
         </h2>
 
         <div
@@ -124,9 +127,9 @@ export default function WeaponsShowcase() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-red-600/20 to-purple-600/20 rounded-full filter blur-3xl"></div>
               <img
-                src="/api/placeholder/600/600"
+                src={weapons[activeWeapon].image}
                 alt={weapons[activeWeapon].name}
-                className="relative z-10 transform transition-all duration-700"
+                className="w-[600px] h-[600px] relative z-10 transform transition-all duration-700"
               />
               <div className="absolute -inset-4 border border-red-500/30 rounded-full animate-pulse"></div>
             </div>
